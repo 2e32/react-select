@@ -1,0 +1,61 @@
+{
+  "name": "@2e32/react-select",
+  "version": "1.0.0",
+  "description": "A React select component",
+  "keywords": [
+    "2e32",
+    "ui",
+    "frontend",
+    "component",
+    "select",
+    "react",
+    "react-component",
+    "react-select"
+  ],
+  "author": "konstantin_b",
+  "repository": "https://github.com/2e32/react-select.git",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/js/types/index.d.ts",
+      "import": "./dist/js/esm/index.js",
+      "require": "./dist/js/cjs/index.js",
+      "default": "./dist/js/esm/index.js"
+    },
+    "./css": "./dist/css/index.css"
+  },
+  "main": "dist/js/cjs/index.js",
+  "module": "dist/js/esm/index.js",
+  "types": "dist/js/types/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && node build.js && tsc",
+    "tsc:config": "tsc --showConfig",
+    "prettier:check": "prettier --check .",
+    "prettier:format": "prettier --write .",
+    "lint": "eslint --fix .",
+    "lint:config": "eslint --print-config *.*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.20",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "esbuild": "^0.19.0",
+    "eslint": "^8.46.0",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
