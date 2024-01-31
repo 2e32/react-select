@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    // Default
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    // Added
+    "baseUrl": "src",
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "dist/js/types",
+    "sourceMap": true,
+    "emitDeclarationOnly": true,
+    "noEmitOnError": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+  },
+  "include": ["src/index.ts"],
+}
